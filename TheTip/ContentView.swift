@@ -10,57 +10,58 @@ import SwiftData
 
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
+    @Query private var meals: [Meal]
+    @State private var showingAddMealView = false
 
     var body: some View {
         NavigationSplitView {
             List {
-                ForEach(items) { item in
+                ForEach(meals) { meal in
                     NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
+                        Text("Meal at \(meal.mealLocation)")
                     } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
+                        Text("Meal at \(meal.mealLocation) on \(meal.timestamp, format: Date.FormatStyle(date: .numeric))")
                     }
                 }
-                .onDelete(perform: deleteItems)
+                .onDelete(perform: deleteMeals)
             }
-#if os(macOS)
-            .navigationSplitViewColumnWidth(min: 180, ideal: 200)
-#endif
             .toolbar {
-#if os(iOS)
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-#endif
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
+                    Button(action: { showingAddMealView = true }) {
+                        Label("Add Meal", systemImage: "plus")
                     }
                 }
             }
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarItems(leading: HStack {
+                Text("Recent Meals")
+                    .font(.title)
+                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                Spacer()
+            })
+    #if os(macOS)
+            .navigationSplitViewColumnWidth(min: 180, ideal: 200)
+    #endif
         } detail: {
-            Text("Select an item")
+            Text("Select a meal")
         }
-    }
+                .sheet(isPresented: $showingAddMealView) {
+                    AddMealView(isPresented: $showingAddMealView)
+                }
+            }
+    
 
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
+    private func deleteMeals(offsets: IndexSet) {
         withAnimation {
             for index in offsets {
-                modelContext.delete(items[index])
+                modelContext.delete(meals[index])
             }
+            try? modelContext.save()
         }
     }
 }
 
 #Preview {
     ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
+        .modelContainer(for: Meal.self, inMemory: true)
 }

@@ -9,10 +9,25 @@ import Foundation
 import SwiftData
 
 @Model
-final class Item {
+final class Meal: Identifiable {
+    var id = UUID()
+    var mealLocation: String
     var timestamp: Date
+    var totalBill: Double
+    var partySize: Int
+    var tipPercentage: Int
     
-    init(timestamp: Date) {
+    var tipPerPerson: Double {
+            let tipValue = totalBill * (Double(tipPercentage) / 100)
+            return (partySize > 0) ? (totalBill + tipValue) / Double(partySize) : 0
+        }
+    
+    
+    init(timestamp: Date, mealLocation: String, totalBill: Double, partySize: Int, tipPercentage: Int) {
         self.timestamp = timestamp
+        self.mealLocation = mealLocation
+        self.totalBill = totalBill
+        self.partySize = partySize
+        self.tipPercentage = tipPercentage
     }
 }

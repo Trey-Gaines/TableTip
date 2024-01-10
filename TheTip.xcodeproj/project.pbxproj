@@ -9,19 +9,21 @@
 /* Begin PBXBuildFile section */
 		2D6139C72B4F309E00BF1B00 /* TheTipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6139C62B4F309E00BF1B00 /* TheTipApp.swift */; };
 		2D6139C92B4F309E00BF1B00 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6139C82B4F309E00BF1B00 /* ContentView.swift */; };
-		2D6139CB2B4F309E00BF1B00 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6139CA2B4F309E00BF1B00 /* Item.swift */; };
+		2D6139CB2B4F309E00BF1B00 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6139CA2B4F309E00BF1B00 /* Meal.swift */; };
 		2D6139CD2B4F30A000BF1B00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D6139CC2B4F30A000BF1B00 /* Assets.xcassets */; };
 		2D6139D12B4F30A000BF1B00 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D6139D02B4F30A000BF1B00 /* Preview Assets.xcassets */; };
+		2D6139D82B4F374900BF1B00 /* AddMealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6139D72B4F374900BF1B00 /* AddMealView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2D6139C32B4F309E00BF1B00 /* TheTip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheTip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D6139C62B4F309E00BF1B00 /* TheTipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheTipApp.swift; sourceTree = "<group>"; };
 		2D6139C82B4F309E00BF1B00 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		2D6139CA2B4F309E00BF1B00 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		2D6139CA2B4F309E00BF1B00 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		2D6139CC2B4F30A000BF1B00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D6139CE2B4F30A000BF1B00 /* TheTip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TheTip.entitlements; sourceTree = "<group>"; };
 		2D6139D02B4F30A000BF1B00 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2D6139D72B4F374900BF1B00 /* AddMealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMealView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +58,8 @@
 			children = (
 				2D6139C62B4F309E00BF1B00 /* TheTipApp.swift */,
 				2D6139C82B4F309E00BF1B00 /* ContentView.swift */,
-				2D6139CA2B4F309E00BF1B00 /* Item.swift */,
+				2D6139D72B4F374900BF1B00 /* AddMealView.swift */,
+				2D6139CA2B4F309E00BF1B00 /* Meal.swift */,
 				2D6139CC2B4F30A000BF1B00 /* Assets.xcassets */,
 				2D6139CE2B4F30A000BF1B00 /* TheTip.entitlements */,
 				2D6139CF2B4F30A000BF1B00 /* Preview Content */,
@@ -143,8 +146,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D6139C92B4F309E00BF1B00 /* ContentView.swift in Sources */,
-				2D6139CB2B4F309E00BF1B00 /* Item.swift in Sources */,
+				2D6139CB2B4F309E00BF1B00 /* Meal.swift in Sources */,
 				2D6139C72B4F309E00BF1B00 /* TheTipApp.swift in Sources */,
+				2D6139D82B4F374900BF1B00 /* AddMealView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
