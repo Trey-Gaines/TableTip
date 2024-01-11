@@ -9,55 +9,29 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var meals: [Meal]
-    @State private var showingAddMealView = false
+    @State private var selectedTab = 1
 
     var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(meals) { meal in
-                    NavigationLink {
-                        Text("Meal at \(meal.mealLocation)")
-                    } label: {
-                        Text("Meal at \(meal.mealLocation) on \(meal.timestamp, format: Date.FormatStyle(date: .numeric))")
-                    }
+        TabView(selection: $selectedTab) {
+            AddMealView(selectedTab: $selectedTab) //Left tab
+                .tabItem {
+                    Label("Add Meal", systemImage: "plus")
                 }
-                .onDelete(perform: deleteMeals)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: { showingAddMealView = true }) {
-                        Label("Add Meal", systemImage: "plus")
-                    }
-                }
-            }
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationBarItems(leading: HStack {
-                Text("Recent Meals")
-                    .font(.title)
-                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                Spacer()
-            })
-    #if os(macOS)
-            .navigationSplitViewColumnWidth(min: 180, ideal: 200)
-    #endif
-        } detail: {
-            Text("Select a meal")
-        }
-                .sheet(isPresented: $showingAddMealView) {
-                    AddMealView(isPresented: $showingAddMealView)
-                }
-            }
-    
+                .tag(0)
 
-    private func deleteMeals(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(meals[index])
-            }
-            try? modelContext.save()
+            RecentMealView() //Middle tab (Current View)
+                .tabItem {
+                    Label("Meals", systemImage: "list.dash")
+                }
+                .tag(1)
+
+            StatsAndSettingsView() //Right tab (Stats/Settings)
+                .tabItem {
+                    Label("Settings", systemImage: "gear")
+                }
+                .tag(2)
         }
+        .accentColor(.blue)//Accent Color for tabs
     }
 }
 

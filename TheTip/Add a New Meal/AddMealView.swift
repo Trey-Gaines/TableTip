@@ -3,6 +3,8 @@ import SwiftUI
 
 struct AddMealView: View {
     @Environment(\.modelContext) var modelContext
+    @Binding var selectedTab: Int
+    
     @State private var totalBill: Double = 0.0
     @State private var mealName: String = ""
     @State private var partySize: Int = 1
@@ -26,7 +28,8 @@ struct AddMealView: View {
                     
                     HStack {
                         Text("Table Bill:")
-                        InputForTableBill(value: $totalBill)
+                        TextField("Total Bill", value: $totalBill, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
+                            .keyboardType(.decimalPad)
                     }
                     
                     Stepper("Party Size: \(partySize)", value: $partySize, in: 1...20)
@@ -52,6 +55,7 @@ struct AddMealView: View {
                     let newMeal = Meal(timestamp: Date(), mealLocation: mealName, totalBill: totalBill, partySize: partySize, tipPercentage: tipPercentage)
                     modelContext.insert(newMeal)
                     clearForm()
+                    selectedTab = 1
                 }) {
                     Text("Add Meal")
                         .foregroundColor(.white)
@@ -66,6 +70,7 @@ struct AddMealView: View {
             }
             .frame(maxWidth: .infinity)
             .cornerRadius(10)
+            .padding()
         }
         .navigationTitle("Add A Meal")
     }
@@ -75,5 +80,5 @@ struct AddMealView: View {
             totalBill = 0.0
             partySize = 1
             tipPercentage = 18
-        }
+    }
 }

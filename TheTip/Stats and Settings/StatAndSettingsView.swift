@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct StatsAndSettingsView: View {
-    @AppStorage("isDarkMode") private var isDarkMode: Bool = false
+    @AppStorage("isDarkMode") var isDarkMode: Bool = false
 
     var body: some View {
         VStack {
@@ -31,4 +31,8 @@ struct StatsAndSettingsView: View {
         }
         .navigationTitle("Stats & Settings")
     }
+}
+
+#Preview {
+    StatsAndSettingsView()
 }
