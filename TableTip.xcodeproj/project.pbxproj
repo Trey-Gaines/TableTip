@@ -28,12 +28,12 @@
 		2D6139CC2B4F30A000BF1B00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = TheTip/Assets.xcassets; sourceTree = "<group>"; };
 		2D6139CE2B4F30A000BF1B00 /* TheTip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = TheTip.entitlements; path = TheTip/TheTip.entitlements; sourceTree = "<group>"; };
 		2D6139D02B4F30A000BF1B00 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Contents.json; path = "TheTip/Preview Content/Preview Assets.xcassets/Contents.json"; sourceTree = "<group>"; };
-		2D6139D72B4F374900BF1B00 /* AddMealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddMealView.swift; path = "TheTip/Add a New Meal/AddMealView.swift"; sourceTree = "<group>"; };
-		2D6139D92B5070EC00BF1B00 /* StatAndSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StatAndSettingsView.swift; path = "TheTip/Stats and Settings/StatAndSettingsView.swift"; sourceTree = "<group>"; };
-		2D6139E22B5087C400BF1B00 /* RecentMealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RecentMealView.swift; path = "TheTip/Looking At Meals/RecentMealView.swift"; sourceTree = "<group>"; };
-		2D6139E62B508A1F00BF1B00 /* MealRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MealRowView.swift; path = "TheTip/Looking At Meals/MealRowView.swift"; sourceTree = "<group>"; };
-		2D6139E82B508ACD00BF1B00 /* MealDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MealDetailedView.swift; path = "TheTip/Looking At Meals/MealDetailedView.swift"; sourceTree = "<group>"; };
-		2D6139EC2B508D6700BF1B00 /* MonthStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MonthStats.swift; path = "TheTip/Stats and Settings/MonthStats.swift"; sourceTree = "<group>"; };
+		2D6139D72B4F374900BF1B00 /* AddMealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMealView.swift; sourceTree = "<group>"; };
+		2D6139D92B5070EC00BF1B00 /* StatAndSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatAndSettingsView.swift; sourceTree = "<group>"; };
+		2D6139E22B5087C400BF1B00 /* RecentMealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentMealView.swift; sourceTree = "<group>"; };
+		2D6139E62B508A1F00BF1B00 /* MealRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealRowView.swift; sourceTree = "<group>"; };
+		2D6139E82B508ACD00BF1B00 /* MealDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailedView.swift; sourceTree = "<group>"; };
+		2D6139EC2B508D6700BF1B00 /* MonthStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthStats.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,9 +69,9 @@
 				2D6139C62B4F309E00BF1B00 /* TheTipApp.swift */,
 				2D6139C82B4F309E00BF1B00 /* ContentView.swift */,
 				2D6139CA2B4F309E00BF1B00 /* Meal.swift */,
-				2D6139E02B5079D000BF1B00 /* Looking At Meals */,
-				2D6139DF2B5079AD00BF1B00 /* Add a New Meal */,
-				2D6139E12B5079EB00BF1B00 /* Stats and Settings */,
+				2DF3FD022B50FAB1004BBE61 /* Viewing Meals */,
+				2DF3FD012B50FA9B004BBE61 /* Add a meal */,
+				2DF3FD002B50FA92004BBE61 /* Stats and Settings */,
 				2D6139CF2B4F30A000BF1B00 /* Preview Content */,
 				2D6139CC2B4F30A000BF1B00 /* Assets.xcassets */,
 				2D6139CE2B4F30A000BF1B00 /* TheTip.entitlements */,
@@ -88,31 +88,31 @@
 			path = "TheTip/Preview Content/Preview Assets.xcassets";
 			sourceTree = "<group>";
 		};
-		2D6139DF2B5079AD00BF1B00 /* Add a New Meal */ = {
-			isa = PBXGroup;
-			children = (
-				2D6139D72B4F374900BF1B00 /* AddMealView.swift */,
-			);
-			path = "Add a New Meal";
-			sourceTree = "<group>";
-		};
-		2D6139E02B5079D000BF1B00 /* Looking At Meals */ = {
-			isa = PBXGroup;
-			children = (
-				2D6139E22B5087C400BF1B00 /* RecentMealView.swift */,
-				2D6139E62B508A1F00BF1B00 /* MealRowView.swift */,
-				2D6139E82B508ACD00BF1B00 /* MealDetailedView.swift */,
-			);
-			path = "Looking At Meals";
-			sourceTree = "<group>";
-		};
-		2D6139E12B5079EB00BF1B00 /* Stats and Settings */ = {
+		2DF3FD002B50FA92004BBE61 /* Stats and Settings */ = {
 			isa = PBXGroup;
 			children = (
 				2D6139D92B5070EC00BF1B00 /* StatAndSettingsView.swift */,
 				2D6139EC2B508D6700BF1B00 /* MonthStats.swift */,
 			);
 			path = "Stats and Settings";
+			sourceTree = "<group>";
+		};
+		2DF3FD012B50FA9B004BBE61 /* Add a meal */ = {
+			isa = PBXGroup;
+			children = (
+				2D6139D72B4F374900BF1B00 /* AddMealView.swift */,
+			);
+			path = "Add a meal";
+			sourceTree = "<group>";
+		};
+		2DF3FD022B50FAB1004BBE61 /* Viewing Meals */ = {
+			isa = PBXGroup;
+			children = (
+				2D6139E22B5087C400BF1B00 /* RecentMealView.swift */,
+				2D6139E62B508A1F00BF1B00 /* MealRowView.swift */,
+				2D6139E82B508ACD00BF1B00 /* MealDetailedView.swift */,
+			);
+			path = "Viewing Meals";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
