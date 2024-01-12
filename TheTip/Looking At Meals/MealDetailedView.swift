@@ -13,18 +13,50 @@ struct MealDetailedView: View {
     var meal: Meal
 
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("Meal at \(meal.mealLocation)")
-                .font(.title)
+        ScrollView {
+            VStack(alignment: .leading, spacing: 10) {
+                HStack {
+                    Text("Location:")
+                        .fontWeight(.bold)
+                        .font(.title3)
+                    Text(meal.mealLocation)
+                        .font(.title3)
+                }
 
-            Text("Amount: \(meal.totalBill, format: .currency(code: "USD"))")
-            Text("Date: \(meal.timestamp, format: Date.FormatStyle(date: .long))")
-            Spacer()
+                HStack {
+                    Text("Date:")
+                        .fontWeight(.bold)
+                        .font(.title3)
+                    Text(meal.timestamp, format: Date.FormatStyle(date: .long))
+                        .font(.title3)
+                }
+
+                HStack {
+                    Text("Total Bill:")
+                        .fontWeight(.bold)
+                        .font(.title3)
+                    Text(meal.totalBill, format: .currency(code: "USD"))
+                        .font(.title3)
+                }
+
+                HStack {
+                    Text("Party Size:")
+                        .fontWeight(.bold)
+                        .font(.title3)
+                    Text("\(meal.partySize)")
+                        .font(.title3)
+                }
+
+                HStack {
+                    Text("Tip Percentage:")
+                        .fontWeight(.bold)
+                        .font(.title3)
+                    Text("\(meal.tipPercentage)%")
+                        .font(.title3) 
+                }
+            }
+            .padding()
         }
-        .padding()
-        .navigationTitle("Meal Details")
+        .navigationTitle("Meal at \(meal.mealLocation)")
     }
 }
-
-
-

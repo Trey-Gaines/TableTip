@@ -13,25 +13,25 @@ struct ContentView: View {
 
     var body: some View {
         TabView(selection: $selectedTab) {
-            AddMealView(selectedTab: $selectedTab) //Left tab
+            AddMealView(selectedTab: $selectedTab)
                 .tabItem {
                     Label("Add Meal", systemImage: "plus")
                 }
                 .tag(0)
 
-            RecentMealView() //Middle tab (Current View)
+            RecentMealView()
                 .tabItem {
                     Label("Meals", systemImage: "list.dash")
                 }
                 .tag(1)
 
-            StatsAndSettingsView() //Right tab (Stats/Settings)
+            StatsAndSettingsView()
                 .tabItem {
                     Label("Settings", systemImage: "gear")
                 }
                 .tag(2)
         }
-        .accentColor(.blue)//Accent Color for tabs
+        .accentColor(.blue)
     }
 }
 

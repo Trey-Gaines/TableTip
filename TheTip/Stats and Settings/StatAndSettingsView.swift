@@ -12,8 +12,10 @@ struct StatsAndSettingsView: View {
 
     var body: some View {
         VStack {
-            Text("Stats")
+            Text("Monthly Stats")
                 .font(.largeTitle)
+            
+            MonthStats()
                 .padding()
             
             Text("Settings")
@@ -27,7 +29,7 @@ struct StatsAndSettingsView: View {
             .pickerStyle(SegmentedPickerStyle())
             .padding()
 
-            Spacer()
+            
         }
         .navigationTitle("Stats & Settings")
     }

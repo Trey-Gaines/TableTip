@@ -11,7 +11,7 @@
 		2D6139C92B4F309E00BF1B00 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6139C82B4F309E00BF1B00 /* ContentView.swift */; };
 		2D6139CB2B4F309E00BF1B00 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6139CA2B4F309E00BF1B00 /* Meal.swift */; };
 		2D6139CD2B4F30A000BF1B00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D6139CC2B4F30A000BF1B00 /* Assets.xcassets */; };
-		2D6139D12B4F30A000BF1B00 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D6139D02B4F30A000BF1B00 /* Preview Assets.xcassets */; };
+		2D6139D12B4F30A000BF1B00 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D6139D02B4F30A000BF1B00 /* Contents.json */; };
 		2D6139D82B4F374900BF1B00 /* AddMealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6139D72B4F374900BF1B00 /* AddMealView.swift */; };
 		2D6139DA2B5070EC00BF1B00 /* StatAndSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6139D92B5070EC00BF1B00 /* StatAndSettingsView.swift */; };
 		2D6139E32B5087C400BF1B00 /* RecentMealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6139E22B5087C400BF1B00 /* RecentMealView.swift */; };
@@ -21,19 +21,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2D6139C32B4F309E00BF1B00 /* TheTip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheTip.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D6139C62B4F309E00BF1B00 /* TheTipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheTipApp.swift; sourceTree = "<group>"; };
-		2D6139C82B4F309E00BF1B00 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		2D6139CA2B4F309E00BF1B00 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
-		2D6139CC2B4F30A000BF1B00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2D6139CE2B4F30A000BF1B00 /* TheTip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TheTip.entitlements; sourceTree = "<group>"; };
-		2D6139D02B4F30A000BF1B00 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		2D6139D72B4F374900BF1B00 /* AddMealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMealView.swift; sourceTree = "<group>"; };
-		2D6139D92B5070EC00BF1B00 /* StatAndSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatAndSettingsView.swift; sourceTree = "<group>"; };
-		2D6139E22B5087C400BF1B00 /* RecentMealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentMealView.swift; sourceTree = "<group>"; };
-		2D6139E62B508A1F00BF1B00 /* MealRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealRowView.swift; sourceTree = "<group>"; };
-		2D6139E82B508ACD00BF1B00 /* MealDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailedView.swift; sourceTree = "<group>"; };
-		2D6139EC2B508D6700BF1B00 /* MonthStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthStats.swift; sourceTree = "<group>"; };
+		2D6139C32B4F309E00BF1B00 /* TableTip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableTip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D6139C62B4F309E00BF1B00 /* TheTipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TheTipApp.swift; path = TheTip/TheTipApp.swift; sourceTree = "<group>"; };
+		2D6139C82B4F309E00BF1B00 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = TheTip/ContentView.swift; sourceTree = "<group>"; };
+		2D6139CA2B4F309E00BF1B00 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Meal.swift; path = TheTip/Meal.swift; sourceTree = "<group>"; };
+		2D6139CC2B4F30A000BF1B00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = TheTip/Assets.xcassets; sourceTree = "<group>"; };
+		2D6139CE2B4F30A000BF1B00 /* TheTip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = TheTip.entitlements; path = TheTip/TheTip.entitlements; sourceTree = "<group>"; };
+		2D6139D02B4F30A000BF1B00 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Contents.json; path = "TheTip/Preview Content/Preview Assets.xcassets/Contents.json"; sourceTree = "<group>"; };
+		2D6139D72B4F374900BF1B00 /* AddMealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddMealView.swift; path = "TheTip/Add a New Meal/AddMealView.swift"; sourceTree = "<group>"; };
+		2D6139D92B5070EC00BF1B00 /* StatAndSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StatAndSettingsView.swift; path = "TheTip/Stats and Settings/StatAndSettingsView.swift"; sourceTree = "<group>"; };
+		2D6139E22B5087C400BF1B00 /* RecentMealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RecentMealView.swift; path = "TheTip/Looking At Meals/RecentMealView.swift"; sourceTree = "<group>"; };
+		2D6139E62B508A1F00BF1B00 /* MealRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MealRowView.swift; path = "TheTip/Looking At Meals/MealRowView.swift"; sourceTree = "<group>"; };
+		2D6139E82B508ACD00BF1B00 /* MealDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MealDetailedView.swift; path = "TheTip/Looking At Meals/MealDetailedView.swift"; sourceTree = "<group>"; };
+		2D6139EC2B508D6700BF1B00 /* MonthStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MonthStats.swift; path = "TheTip/Stats and Settings/MonthStats.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,7 @@
 		2D6139C42B4F309E00BF1B00 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2D6139C32B4F309E00BF1B00 /* TheTip.app */,
+				2D6139C32B4F309E00BF1B00 /* TableTip.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,15 +76,16 @@
 				2D6139CC2B4F30A000BF1B00 /* Assets.xcassets */,
 				2D6139CE2B4F30A000BF1B00 /* TheTip.entitlements */,
 			);
-			path = TheTip;
+			name = TheTip;
 			sourceTree = "<group>";
 		};
 		2D6139CF2B4F30A000BF1B00 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				2D6139D02B4F30A000BF1B00 /* Preview Assets.xcassets */,
+				2D6139D02B4F30A000BF1B00 /* Contents.json */,
 			);
-			path = "Preview Content";
+			name = "Preview Content";
+			path = "TheTip/Preview Content/Preview Assets.xcassets";
 			sourceTree = "<group>";
 		};
 		2D6139DF2B5079AD00BF1B00 /* Add a New Meal */ = {
@@ -117,9 +118,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2D6139C22B4F309E00BF1B00 /* TheTip */ = {
+		2D6139C22B4F309E00BF1B00 /* TableTip */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D6139D42B4F30A000BF1B00 /* Build configuration list for PBXNativeTarget "TheTip" */;
+			buildConfigurationList = 2D6139D42B4F30A000BF1B00 /* Build configuration list for PBXNativeTarget "TableTip" */;
 			buildPhases = (
 				2D6139BF2B4F309E00BF1B00 /* Sources */,
 				2D6139C02B4F309E00BF1B00 /* Frameworks */,
@@ -129,9 +130,9 @@
 			);
 			dependencies = (
 			);
-			name = TheTip;
+			name = TableTip;
 			productName = TheTip;
-			productReference = 2D6139C32B4F309E00BF1B00 /* TheTip.app */;
+			productReference = 2D6139C32B4F309E00BF1B00 /* TableTip.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -149,7 +150,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2D6139BE2B4F309E00BF1B00 /* Build configuration list for PBXProject "TheTip" */;
+			buildConfigurationList = 2D6139BE2B4F309E00BF1B00 /* Build configuration list for PBXProject "TableTip" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -162,7 +163,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2D6139C22B4F309E00BF1B00 /* TheTip */,
+				2D6139C22B4F309E00BF1B00 /* TableTip */,
 			);
 		};
 /* End PBXProject section */
@@ -172,7 +173,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D6139D12B4F30A000BF1B00 /* Preview Assets.xcassets in Resources */,
+				2D6139D12B4F30A000BF1B00 /* Contents.json in Resources */,
 				2D6139CD2B4F30A000BF1B00 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,7 +395,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D6139BE2B4F309E00BF1B00 /* Build configuration list for PBXProject "TheTip" */ = {
+		2D6139BE2B4F309E00BF1B00 /* Build configuration list for PBXProject "TableTip" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D6139D22B4F30A000BF1B00 /* Debug */,
@@ -403,7 +404,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D6139D42B4F30A000BF1B00 /* Build configuration list for PBXNativeTarget "TheTip" */ = {
+		2D6139D42B4F30A000BF1B00 /* Build configuration list for PBXNativeTarget "TableTip" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D6139D52B4F30A000BF1B00 /* Debug */,

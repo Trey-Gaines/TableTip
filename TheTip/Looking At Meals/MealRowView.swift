@@ -21,6 +21,7 @@ struct MealRowView: View {
                 Text("Amount: \(meal.totalBill, format: .currency(code: "USD"))")
                     .font(.subheadline)
             }
+            .frame(maxWidth: .infinity, alignment: .leading)
 
             Spacer()
 
