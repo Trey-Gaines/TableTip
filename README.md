@@ -3,7 +3,7 @@ Table Based Tip Calculator
 - WidgetKit
 - MapKit
 
-Put in the Table Tip (combine all the tickets at the table), amount of people at the table, 
+Put in the Table Bill (all bills combined at the table), amount of people at the table, 
 and it'll give the tip everyone should leave on their respective bill.
 
 Stats are only based on meals you've had alone
