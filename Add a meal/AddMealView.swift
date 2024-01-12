@@ -54,6 +54,7 @@ struct AddMealView: View {
                 Button(action: {
                     let newMeal = Meal(timestamp: Date(), mealLocation: mealName, totalBill: totalBill, partySize: partySize, tipPercentage: tipPercentage)
                     modelContext.insert(newMeal)
+                    saveLastMeal(newMeal)
                     clearForm()
                     selectedTab = 1
                 }) {
@@ -80,5 +81,13 @@ struct AddMealView: View {
             totalBill = 0.0
             partySize = 1
             tipPercentage = 18
+    }
+    
+    private func saveLastMeal(_ meal: Meal) {
+        let defaults = UserDefaults.standard
+        defaults.set(meal.totalBill, forKey: "lastTotalBill")
+        defaults.set(meal.partySize, forKey: "lastPartySize")
+        defaults.set(meal.mealLocation, forKey: "lastMealLocation")
+        defaults.set(meal.timestamp, forKey: "savedDate")
     }
 }

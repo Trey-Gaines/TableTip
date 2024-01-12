@@ -70,6 +70,13 @@ struct MonthStats: View {
         averageSpent = meals.getAverageSpend()
         restaurantsVisited = meals.getResturantCount()
         favoriteRestaurant = meals.getFavorite()
+        
+        
+        let defaults = UserDefaults.standard
+        defaults.set(moneySpent, forKey: "moneySpent")
+        defaults.set(averageSpent, forKey: "averageSpent")
+        defaults.set(restaurantsVisited, forKey: "restaurantsVisited")
+        defaults.set(favoriteRestaurant, forKey: "favoriteRestaurant")
     }
 }
 

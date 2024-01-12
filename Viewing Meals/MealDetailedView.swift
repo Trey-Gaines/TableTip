@@ -21,6 +21,7 @@ struct MealDetailedView: View {
                         .font(.title3)
                     Text(meal.mealLocation)
                         .font(.title3)
+                    Spacer()
                 }
 
                 HStack {
@@ -29,6 +30,7 @@ struct MealDetailedView: View {
                         .font(.title3)
                     Text(meal.timestamp, format: Date.FormatStyle(date: .long))
                         .font(.title3)
+                    Spacer()
                 }
 
                 HStack {
@@ -37,6 +39,7 @@ struct MealDetailedView: View {
                         .font(.title3)
                     Text(meal.totalBill, format: .currency(code: "USD"))
                         .font(.title3)
+                    Spacer()
                 }
 
                 HStack {
@@ -45,6 +48,7 @@ struct MealDetailedView: View {
                         .font(.title3)
                     Text("\(meal.partySize)")
                         .font(.title3)
+                    Spacer()
                 }
 
                 HStack {
@@ -53,6 +57,7 @@ struct MealDetailedView: View {
                         .font(.title3)
                     Text("\(meal.tipPercentage)%")
                         .font(.title3) 
+                    Spacer()
                 }
             }
             .padding()
