@@ -12,16 +12,18 @@ struct StatsAndSettingsView: View {
 
     var body: some View {
         VStack {
+            //Montly Stats at top
             Text("Monthly Stats")
                 .font(.largeTitle)
             
-            MonthStats()
+            MonthStats() //Month Stats View
                 .padding()
             
             Text("Settings")
                 .font(.largeTitle)
                 .padding()
 
+            //Picker for user preference on color mode
             Picker("Mode", selection: $isDarkMode) {
                 Text("Light").tag(false)
                 Text("Dark").tag(true)
@@ -29,9 +31,19 @@ struct StatsAndSettingsView: View {
             .pickerStyle(SegmentedPickerStyle())
             .padding()
 
-            
-        }
+        Button("Open App Settings") { //Button to open App Settings
+                openAppSettings()
+                }
+            }
         .navigationTitle("Stats & Settings")
+    }
+    
+    private func openAppSettings() {
+        guard let appSettings = URL(string: UIApplication.openSettingsURLString),
+              UIApplication.shared.canOpenURL(appSettings) else {
+            return
+        }
+        UIApplication.shared.open(appSettings)
     }
 }
 

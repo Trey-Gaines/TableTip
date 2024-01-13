@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		2D0A0E5D2B51C42500157579 /* MontlyStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0A0E5C2B51C42500157579 /* MontlyStats.swift */; };
-		2D6139C72B4F309E00BF1B00 /* TheTipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6139C62B4F309E00BF1B00 /* TheTipApp.swift */; };
+		2D0A0E602B51CFCB00157579 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0A0E5E2B51CF2500157579 /* MapView.swift */; };
+		2D0A0E662B52018200157579 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0A0E612B51DED800157579 /* LocationManager.swift */; };
+		2D6139C72B4F309E00BF1B00 /* TableTipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6139C62B4F309E00BF1B00 /* TableTipApp.swift */; };
 		2D6139C92B4F309E00BF1B00 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6139C82B4F309E00BF1B00 /* ContentView.swift */; };
-		2D6139CB2B4F309E00BF1B00 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6139CA2B4F309E00BF1B00 /* Meal.swift */; };
+		2D6139CB2B4F309E00BF1B00 /* MealModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6139CA2B4F309E00BF1B00 /* MealModel.swift */; };
 		2D6139CD2B4F30A000BF1B00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D6139CC2B4F30A000BF1B00 /* Assets.xcassets */; };
 		2D6139D82B4F374900BF1B00 /* AddMealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6139D72B4F374900BF1B00 /* AddMealView.swift */; };
 		2D6139DA2B5070EC00BF1B00 /* StatAndSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6139D92B5070EC00BF1B00 /* StatAndSettingsView.swift */; };
@@ -54,10 +56,12 @@
 
 /* Begin PBXFileReference section */
 		2D0A0E5C2B51C42500157579 /* MontlyStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MontlyStats.swift; sourceTree = "<group>"; };
+		2D0A0E5E2B51CF2500157579 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		2D0A0E612B51DED800157579 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		2D6139C32B4F309E00BF1B00 /* TableTip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableTip.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D6139C62B4F309E00BF1B00 /* TheTipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TheTipApp.swift; path = TheTip/TheTipApp.swift; sourceTree = "<group>"; };
+		2D6139C62B4F309E00BF1B00 /* TableTipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TableTipApp.swift; path = TheTip/TableTipApp.swift; sourceTree = "<group>"; };
 		2D6139C82B4F309E00BF1B00 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = TheTip/ContentView.swift; sourceTree = "<group>"; };
-		2D6139CA2B4F309E00BF1B00 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Meal.swift; path = TheTip/Meal.swift; sourceTree = "<group>"; };
+		2D6139CA2B4F309E00BF1B00 /* MealModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MealModel.swift; path = TheTip/MealModel.swift; sourceTree = "<group>"; };
 		2D6139CC2B4F30A000BF1B00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = TheTip/Assets.xcassets; sourceTree = "<group>"; };
 		2D6139CE2B4F30A000BF1B00 /* TheTip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = TheTip.entitlements; path = TheTip/TheTip.entitlements; sourceTree = "<group>"; };
 		2D6139D72B4F374900BF1B00 /* AddMealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMealView.swift; sourceTree = "<group>"; };
@@ -96,11 +100,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D0A0E672B52334C00157579 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				2D0A0E5E2B51CF2500157579 /* MapView.swift */,
+				2D0A0E612B51DED800157579 /* LocationManager.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
 		2D6139BA2B4F309E00BF1B00 = {
 			isa = PBXGroup;
 			children = (
-				2D6139C52B4F309E00BF1B00 /* TheTip */,
-				2DF3FD2A2B51AFFD004BBE61 /* RecentMeals */,
+				2D6139C52B4F309E00BF1B00 /* TableTip */,
+				2DF3FD2A2B51AFFD004BBE61 /* Widgets */,
 				2DF3FD0B2B51AE8D004BBE61 /* Frameworks */,
 				2D6139C42B4F309E00BF1B00 /* Products */,
 			);
@@ -115,12 +128,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2D6139C52B4F309E00BF1B00 /* TheTip */ = {
+		2D6139C52B4F309E00BF1B00 /* TableTip */ = {
 			isa = PBXGroup;
 			children = (
-				2D6139C62B4F309E00BF1B00 /* TheTipApp.swift */,
+				2D6139C62B4F309E00BF1B00 /* TableTipApp.swift */,
 				2D6139C82B4F309E00BF1B00 /* ContentView.swift */,
-				2D6139CA2B4F309E00BF1B00 /* Meal.swift */,
+				2D6139CA2B4F309E00BF1B00 /* MealModel.swift */,
 				2DF3FD022B50FAB1004BBE61 /* Viewing Meals */,
 				2DF3FD012B50FA9B004BBE61 /* Add a meal */,
 				2DF3FD002B50FA92004BBE61 /* Stats and Settings */,
@@ -128,7 +141,7 @@
 				2D6139CC2B4F30A000BF1B00 /* Assets.xcassets */,
 				2D6139CE2B4F30A000BF1B00 /* TheTip.entitlements */,
 			);
-			name = TheTip;
+			name = TableTip;
 			sourceTree = "<group>";
 		};
 		2D6139CF2B4F30A000BF1B00 /* Preview Content */ = {
@@ -162,6 +175,7 @@
 				2D6139E22B5087C400BF1B00 /* RecentMealView.swift */,
 				2D6139E62B508A1F00BF1B00 /* MealRowView.swift */,
 				2D6139E82B508ACD00BF1B00 /* MealDetailedView.swift */,
+				2D0A0E672B52334C00157579 /* Location */,
 			);
 			path = "Viewing Meals";
 			sourceTree = "<group>";
@@ -175,7 +189,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2DF3FD2A2B51AFFD004BBE61 /* RecentMeals */ = {
+		2DF3FD2A2B51AFFD004BBE61 /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
 				2DF3FD2B2B51AFFD004BBE61 /* RecentMealsBundle.swift */,
@@ -185,7 +199,7 @@
 				2DF3FD312B51AFFE004BBE61 /* Assets.xcassets */,
 				2DF3FD332B51AFFE004BBE61 /* Info.plist */,
 			);
-			path = RecentMeals;
+			path = Widgets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,13 +305,15 @@
 				2D6139ED2B508D6700BF1B00 /* MonthStats.swift in Sources */,
 				2D6139E32B5087C400BF1B00 /* RecentMealView.swift in Sources */,
 				2D6139C92B4F309E00BF1B00 /* ContentView.swift in Sources */,
-				2D6139CB2B4F309E00BF1B00 /* Meal.swift in Sources */,
+				2D0A0E602B51CFCB00157579 /* MapView.swift in Sources */,
+				2D6139CB2B4F309E00BF1B00 /* MealModel.swift in Sources */,
 				2D6139DA2B5070EC00BF1B00 /* StatAndSettingsView.swift in Sources */,
 				2DF3FD3E2B51B8E2004BBE61 /* StatisticsLoader.swift in Sources */,
-				2D6139C72B4F309E00BF1B00 /* TheTipApp.swift in Sources */,
+				2D6139C72B4F309E00BF1B00 /* TableTipApp.swift in Sources */,
 				2D6139E72B508A1F00BF1B00 /* MealRowView.swift in Sources */,
 				2D6139D82B4F374900BF1B00 /* AddMealView.swift in Sources */,
 				2D6139E92B508ACD00BF1B00 /* MealDetailedView.swift in Sources */,
+				2D0A0E662B52018200157579 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

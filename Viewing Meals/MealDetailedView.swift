@@ -8,9 +8,11 @@
 import Foundation
 import SwiftUI
 import SwiftData
+import MapKit
 
 struct MealDetailedView: View {
     var meal: Meal
+    @State private var coordinate: CLLocationCoordinate2D?
 
     var body: some View {
         ScrollView {
@@ -61,7 +63,40 @@ struct MealDetailedView: View {
                 }
             }
             .padding()
+            
+            VStack {
+                if let coordinate = coordinate {
+                    MapView(coordinate: coordinate)
+                        .frame(height: 200)
+                        .cornerRadius(10)
+                        .padding()
+                } else {
+                    Text("Loading map...")
+                        .onAppear {
+                            getCoordinates(for: meal.mealLocation) { coord in
+                                self.coordinate = coord
+                            }
+                        }
+                }
+            }
         }
         .navigationTitle("Meal at \(meal.mealLocation)")
     }
 }
+
+
+
+private func getCoordinates(for address: String, completion: @escaping (CLLocationCoordinate2D?) -> Void) {
+    let geocoder = CLGeocoder()
+    geocoder.geocodeAddressString(address) { placemarks, error in
+        guard let placemark = placemarks?.first, let location = placemark.location else {
+            completion(nil)
+            return
+        }
+        completion(location.coordinate)
+    }
+    
+    
+    
+}
+

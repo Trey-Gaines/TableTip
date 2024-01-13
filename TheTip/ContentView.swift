@@ -9,6 +9,10 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
+    //Tag will be used to cycle through views in the tabView
+    //0: AddMealView
+    //1: RecentMealView
+    //0: StatsAndSettingsView
     @State private var selectedTab = 1
 
     var body: some View {

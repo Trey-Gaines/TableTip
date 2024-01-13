@@ -33,14 +33,30 @@ struct RecentMealsSimpleEntry: TimelineEntry {
 
 struct RecentMealsEntryView : View {
     var entry: Provider.Entry
+    
+    var timeBetweenLastMeal: String {
+        //Interval is the seconds between the MostRecentTimestamp in entry and current time
+        let interval = Date().timeIntervalSince(entry.statistics.mostRecentTimestamp)
+        
+        let hourInterval = Int(interval / 3600) //Divide by an hour's worth of seconds
+        //Ternary Operator. If hour interval is less than or an hour the first will be returned, else the second
+        return (hourInterval <= 1) ? "An hour ago" : "\(hourInterval) hours ago"
+    }
 
     var body: some View {
         VStack {
-            Text("Time:")
-            Text(entry.date, style: .time)
-
+            HStack {
+                Text("Most Recent Meal")
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.bottom, 5)
+            }
+            Text("")
+                .frame(maxWidth: .infinity, alignment: .trailing)
         }
+        .foregroundColor(.white)
+        
     }
+    
 }
 
 struct RecentMeals: Widget {
@@ -49,9 +65,10 @@ struct RecentMeals: Widget {
     var body: some WidgetConfiguration {
             StaticConfiguration(kind: kind, provider: Provider()) { entry in
                 RecentMealsEntryView(entry: entry)
-                    .containerBackground(.fill.tertiary, for: .widget)
+                    .containerBackground(Color.black, for: .widget)
             }
             .description(Text("Here's the information of your most recent meal"))
+            
     }
 }
 

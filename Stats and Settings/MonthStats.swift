@@ -64,7 +64,7 @@ struct MonthStats: View {
     }
     
     
-
+//Stores data to be used for widget
     private func updateStats() {
         moneySpent = meals.getTotalSpend()
         averageSpent = meals.getAverageSpend()
