@@ -1,4 +1,4 @@
-Table Based Tip Calculator
+Meal Tracker + Tip Calculator
 
 Frameworks Explored:
   - SwiftUI
@@ -6,7 +6,5 @@ Frameworks Explored:
   - WidgetKit
   - MapKit
 
-Put in the Table Bill (all bills combined at the table), amount of people at the table, 
-and it'll give the tip everyone should leave on their respective bill, among other things.
-
-Stats are only based on meals you've had alone
+Put in the Bill (if alone: personal bill, if group: combined bills), amount of people at the table, 
+and it'll give the tip you should leave on the bill(s), among other things.
