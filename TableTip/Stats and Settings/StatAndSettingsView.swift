@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct StatsAndSettingsView: View {
-    @AppStorage("isDarkMode") var isDarkMode: Bool = false
+    @AppStorage("isDarkMode") var isDarkMode: Bool = true
 
     var body: some View {
         VStack {
@@ -31,11 +31,11 @@ struct StatsAndSettingsView: View {
             .pickerStyle(SegmentedPickerStyle())
             .padding()
 
-        Button("Open App Settings") { //Button to open App Settings
-                openAppSettings()
+            Button("Open App Settings") { //Button to open App Settings
+                    openAppSettings()
+                    }
                 }
-            }
-        .navigationTitle("Stats & Settings")
+            .navigationTitle("Stats & Settings")
     }
     
     private func openAppSettings() {

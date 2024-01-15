@@ -39,7 +39,7 @@ struct MonthStats: View {
 
             HStack {
                 VStack {
-                    Text("Restaurants Visited")
+                    Text("Spots Visited")
                         .font(.headline)
                     Text("\(restaurantsVisited)")
                         .font(.title2)
@@ -48,7 +48,7 @@ struct MonthStats: View {
                 .frame(maxWidth: .infinity)
 
                 VStack {
-                    Text("Favorite Restaurant")
+                    Text("Favorite Spot")
                         .font(.headline)
                     Text("\(favoriteRestaurant)")
                         .font(.title2)

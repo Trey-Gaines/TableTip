@@ -7,38 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2D0A0E5D2B51C42500157579 /* MontlyStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0A0E5C2B51C42500157579 /* MontlyStats.swift */; };
-		2D0A0E602B51CFCB00157579 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0A0E5E2B51CF2500157579 /* MapView.swift */; };
 		2D0A0E662B52018200157579 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0A0E612B51DED800157579 /* LocationManager.swift */; };
 		2D6139C72B4F309E00BF1B00 /* TableTipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6139C62B4F309E00BF1B00 /* TableTipApp.swift */; };
 		2D6139C92B4F309E00BF1B00 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6139C82B4F309E00BF1B00 /* ContentView.swift */; };
 		2D6139CB2B4F309E00BF1B00 /* MealModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6139CA2B4F309E00BF1B00 /* MealModel.swift */; };
-		2D6139CD2B4F30A000BF1B00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D6139CC2B4F30A000BF1B00 /* Assets.xcassets */; };
 		2D6139D82B4F374900BF1B00 /* AddMealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6139D72B4F374900BF1B00 /* AddMealView.swift */; };
 		2D6139DA2B5070EC00BF1B00 /* StatAndSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6139D92B5070EC00BF1B00 /* StatAndSettingsView.swift */; };
 		2D6139E32B5087C400BF1B00 /* RecentMealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6139E22B5087C400BF1B00 /* RecentMealView.swift */; };
 		2D6139E72B508A1F00BF1B00 /* MealRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6139E62B508A1F00BF1B00 /* MealRowView.swift */; };
 		2D6139E92B508ACD00BF1B00 /* MealDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6139E82B508ACD00BF1B00 /* MealDetailedView.swift */; };
 		2D6139ED2B508D6700BF1B00 /* MonthStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6139EC2B508D6700BF1B00 /* MonthStats.swift */; };
-		2DF3FD282B51AFFD004BBE61 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DF3FD0C2B51AE8D004BBE61 /* WidgetKit.framework */; };
-		2DF3FD292B51AFFD004BBE61 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DF3FD0E2B51AE8D004BBE61 /* SwiftUI.framework */; };
-		2DF3FD2C2B51AFFD004BBE61 /* RecentMealsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF3FD2B2B51AFFD004BBE61 /* RecentMealsBundle.swift */; };
-		2DF3FD2E2B51AFFD004BBE61 /* RecentMeals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF3FD2D2B51AFFD004BBE61 /* RecentMeals.swift */; };
-		2DF3FD322B51AFFE004BBE61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DF3FD312B51AFFE004BBE61 /* Assets.xcassets */; };
-		2DF3FD362B51AFFE004BBE61 /* RecentMealsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2DF3FD272B51AFFD004BBE61 /* RecentMealsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		2DF3FD3E2B51B8E2004BBE61 /* StatisticsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF3FD3D2B51B8E2004BBE61 /* StatisticsLoader.swift */; };
-		2DF3FD3F2B51B8E9004BBE61 /* StatisticsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF3FD3D2B51B8E2004BBE61 /* StatisticsLoader.swift */; };
+		2D6C5D7C2B549C9B00EFD01D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D6C5D7B2B549C9B00EFD01D /* Assets.xcassets */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		2DF3FD342B51AFFE004BBE61 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2D6139BB2B4F309E00BF1B00 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2DF3FD262B51AFFD004BBE61;
-			remoteInfo = RecentMealsExtension;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		2DF3FD222B51AE8E004BBE61 /* Embed Foundation Extensions */ = {
@@ -47,7 +27,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				2DF3FD362B51AFFE004BBE61 /* RecentMealsExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,29 +34,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2D0A0E5C2B51C42500157579 /* MontlyStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MontlyStats.swift; sourceTree = "<group>"; };
-		2D0A0E5E2B51CF2500157579 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		2D0A0E612B51DED800157579 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		2D6139C32B4F309E00BF1B00 /* TableTip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableTip.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D6139C62B4F309E00BF1B00 /* TableTipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TableTipApp.swift; path = TheTip/TableTipApp.swift; sourceTree = "<group>"; };
-		2D6139C82B4F309E00BF1B00 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = TheTip/ContentView.swift; sourceTree = "<group>"; };
-		2D6139CA2B4F309E00BF1B00 /* MealModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MealModel.swift; path = TheTip/MealModel.swift; sourceTree = "<group>"; };
-		2D6139CC2B4F30A000BF1B00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = TheTip/Assets.xcassets; sourceTree = "<group>"; };
-		2D6139CE2B4F30A000BF1B00 /* TheTip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = TheTip.entitlements; path = TheTip/TheTip.entitlements; sourceTree = "<group>"; };
+		2D6139C62B4F309E00BF1B00 /* TableTipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableTipApp.swift; sourceTree = "<group>"; };
+		2D6139C82B4F309E00BF1B00 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2D6139CA2B4F309E00BF1B00 /* MealModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealModel.swift; sourceTree = "<group>"; };
 		2D6139D72B4F374900BF1B00 /* AddMealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMealView.swift; sourceTree = "<group>"; };
 		2D6139D92B5070EC00BF1B00 /* StatAndSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatAndSettingsView.swift; sourceTree = "<group>"; };
 		2D6139E22B5087C400BF1B00 /* RecentMealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentMealView.swift; sourceTree = "<group>"; };
 		2D6139E62B508A1F00BF1B00 /* MealRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealRowView.swift; sourceTree = "<group>"; };
 		2D6139E82B508ACD00BF1B00 /* MealDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailedView.swift; sourceTree = "<group>"; };
 		2D6139EC2B508D6700BF1B00 /* MonthStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthStats.swift; sourceTree = "<group>"; };
+		2D6C5D5D2B54096600EFD01D /* TheTip.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = TheTip.entitlements; sourceTree = "<group>"; };
+		2D6C5D7B2B549C9B00EFD01D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DF3FD0C2B51AE8D004BBE61 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		2DF3FD0E2B51AE8D004BBE61 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		2DF3FD272B51AFFD004BBE61 /* RecentMealsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RecentMealsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		2DF3FD2B2B51AFFD004BBE61 /* RecentMealsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentMealsBundle.swift; sourceTree = "<group>"; };
-		2DF3FD2D2B51AFFD004BBE61 /* RecentMeals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentMeals.swift; sourceTree = "<group>"; };
-		2DF3FD312B51AFFE004BBE61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2DF3FD332B51AFFE004BBE61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2DF3FD3D2B51B8E2004BBE61 /* StatisticsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,32 +59,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2DF3FD242B51AFFD004BBE61 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2DF3FD292B51AFFD004BBE61 /* SwiftUI.framework in Frameworks */,
-				2DF3FD282B51AFFD004BBE61 /* WidgetKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2D0A0E672B52334C00157579 /* Location */ = {
-			isa = PBXGroup;
-			children = (
-				2D0A0E5E2B51CF2500157579 /* MapView.swift */,
-				2D0A0E612B51DED800157579 /* LocationManager.swift */,
-			);
-			path = Location;
-			sourceTree = "<group>";
-		};
 		2D6139BA2B4F309E00BF1B00 = {
 			isa = PBXGroup;
 			children = (
-				2D6139C52B4F309E00BF1B00 /* TableTip */,
-				2DF3FD2A2B51AFFD004BBE61 /* Widgets */,
+				2D6C5D5A2B53FEEB00EFD01D /* TableTip */,
 				2DF3FD0B2B51AE8D004BBE61 /* Frameworks */,
 				2D6139C42B4F309E00BF1B00 /* Products */,
 			);
@@ -123,61 +75,51 @@
 			isa = PBXGroup;
 			children = (
 				2D6139C32B4F309E00BF1B00 /* TableTip.app */,
-				2DF3FD272B51AFFD004BBE61 /* RecentMealsExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2D6139C52B4F309E00BF1B00 /* TableTip */ = {
+		2D6C5D5A2B53FEEB00EFD01D /* TableTip */ = {
 			isa = PBXGroup;
 			children = (
 				2D6139C62B4F309E00BF1B00 /* TableTipApp.swift */,
-				2D6139C82B4F309E00BF1B00 /* ContentView.swift */,
 				2D6139CA2B4F309E00BF1B00 /* MealModel.swift */,
-				2DF3FD022B50FAB1004BBE61 /* Viewing Meals */,
-				2DF3FD012B50FA9B004BBE61 /* Add a meal */,
+				2D6139C82B4F309E00BF1B00 /* ContentView.swift */,
+				2D6C5D5D2B54096600EFD01D /* TheTip.entitlements */,
+				2D6C5D5B2B53FEFA00EFD01D /* Viewing A Meal */,
+				2D6C5D5C2B53FF1000EFD01D /* Add A Meal */,
 				2DF3FD002B50FA92004BBE61 /* Stats and Settings */,
-				2D6139CF2B4F30A000BF1B00 /* Preview Content */,
-				2D6139CC2B4F30A000BF1B00 /* Assets.xcassets */,
-				2D6139CE2B4F30A000BF1B00 /* TheTip.entitlements */,
+				2D6C5D7B2B549C9B00EFD01D /* Assets.xcassets */,
 			);
-			name = TableTip;
+			path = TableTip;
 			sourceTree = "<group>";
 		};
-		2D6139CF2B4F30A000BF1B00 /* Preview Content */ = {
+		2D6C5D5B2B53FEFA00EFD01D /* Viewing A Meal */ = {
 			isa = PBXGroup;
 			children = (
+				2D6139E82B508ACD00BF1B00 /* MealDetailedView.swift */,
+				2D6139E22B5087C400BF1B00 /* RecentMealView.swift */,
+				2D6139E62B508A1F00BF1B00 /* MealRowView.swift */,
 			);
-			name = "Preview Content";
-			path = TheTip/Assets.xcassets;
+			path = "Viewing A Meal";
+			sourceTree = "<group>";
+		};
+		2D6C5D5C2B53FF1000EFD01D /* Add A Meal */ = {
+			isa = PBXGroup;
+			children = (
+				2D6139D72B4F374900BF1B00 /* AddMealView.swift */,
+				2D0A0E612B51DED800157579 /* LocationManager.swift */,
+			);
+			path = "Add A Meal";
 			sourceTree = "<group>";
 		};
 		2DF3FD002B50FA92004BBE61 /* Stats and Settings */ = {
 			isa = PBXGroup;
 			children = (
-				2D6139D92B5070EC00BF1B00 /* StatAndSettingsView.swift */,
 				2D6139EC2B508D6700BF1B00 /* MonthStats.swift */,
+				2D6139D92B5070EC00BF1B00 /* StatAndSettingsView.swift */,
 			);
 			path = "Stats and Settings";
-			sourceTree = "<group>";
-		};
-		2DF3FD012B50FA9B004BBE61 /* Add a meal */ = {
-			isa = PBXGroup;
-			children = (
-				2D6139D72B4F374900BF1B00 /* AddMealView.swift */,
-			);
-			path = "Add a meal";
-			sourceTree = "<group>";
-		};
-		2DF3FD022B50FAB1004BBE61 /* Viewing Meals */ = {
-			isa = PBXGroup;
-			children = (
-				2D6139E22B5087C400BF1B00 /* RecentMealView.swift */,
-				2D6139E62B508A1F00BF1B00 /* MealRowView.swift */,
-				2D6139E82B508ACD00BF1B00 /* MealDetailedView.swift */,
-				2D0A0E672B52334C00157579 /* Location */,
-			);
-			path = "Viewing Meals";
 			sourceTree = "<group>";
 		};
 		2DF3FD0B2B51AE8D004BBE61 /* Frameworks */ = {
@@ -187,19 +129,6 @@
 				2DF3FD0E2B51AE8D004BBE61 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2DF3FD2A2B51AFFD004BBE61 /* Widgets */ = {
-			isa = PBXGroup;
-			children = (
-				2DF3FD2B2B51AFFD004BBE61 /* RecentMealsBundle.swift */,
-				2DF3FD2D2B51AFFD004BBE61 /* RecentMeals.swift */,
-				2D0A0E5C2B51C42500157579 /* MontlyStats.swift */,
-				2DF3FD3D2B51B8E2004BBE61 /* StatisticsLoader.swift */,
-				2DF3FD312B51AFFE004BBE61 /* Assets.xcassets */,
-				2DF3FD332B51AFFE004BBE61 /* Info.plist */,
-			);
-			path = Widgets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,29 +146,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				2DF3FD352B51AFFE004BBE61 /* PBXTargetDependency */,
 			);
 			name = TableTip;
 			productName = TheTip;
 			productReference = 2D6139C32B4F309E00BF1B00 /* TableTip.app */;
 			productType = "com.apple.product-type.application";
-		};
-		2DF3FD262B51AFFD004BBE61 /* RecentMealsExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2DF3FD372B51AFFE004BBE61 /* Build configuration list for PBXNativeTarget "RecentMealsExtension" */;
-			buildPhases = (
-				2DF3FD232B51AFFD004BBE61 /* Sources */,
-				2DF3FD242B51AFFD004BBE61 /* Frameworks */,
-				2DF3FD252B51AFFD004BBE61 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = RecentMealsExtension;
-			productName = RecentMealsExtension;
-			productReference = 2DF3FD272B51AFFD004BBE61 /* RecentMealsExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -252,9 +163,6 @@
 				LastUpgradeCheck = 1510;
 				TargetAttributes = {
 					2D6139C22B4F309E00BF1B00 = {
-						CreatedOnToolsVersion = 15.1;
-					};
-					2DF3FD262B51AFFD004BBE61 = {
 						CreatedOnToolsVersion = 15.1;
 					};
 				};
@@ -273,7 +181,6 @@
 			projectRoot = "";
 			targets = (
 				2D6139C22B4F309E00BF1B00 /* TableTip */,
-				2DF3FD262B51AFFD004BBE61 /* RecentMealsExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -283,15 +190,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D6139CD2B4F30A000BF1B00 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2DF3FD252B51AFFD004BBE61 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2DF3FD322B51AFFE004BBE61 /* Assets.xcassets in Resources */,
+				2D6C5D7C2B549C9B00EFD01D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,10 +204,8 @@
 				2D6139ED2B508D6700BF1B00 /* MonthStats.swift in Sources */,
 				2D6139E32B5087C400BF1B00 /* RecentMealView.swift in Sources */,
 				2D6139C92B4F309E00BF1B00 /* ContentView.swift in Sources */,
-				2D0A0E602B51CFCB00157579 /* MapView.swift in Sources */,
 				2D6139CB2B4F309E00BF1B00 /* MealModel.swift in Sources */,
 				2D6139DA2B5070EC00BF1B00 /* StatAndSettingsView.swift in Sources */,
-				2DF3FD3E2B51B8E2004BBE61 /* StatisticsLoader.swift in Sources */,
 				2D6139C72B4F309E00BF1B00 /* TableTipApp.swift in Sources */,
 				2D6139E72B508A1F00BF1B00 /* MealRowView.swift in Sources */,
 				2D6139D82B4F374900BF1B00 /* AddMealView.swift in Sources */,
@@ -317,26 +214,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2DF3FD232B51AFFD004BBE61 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2DF3FD3F2B51B8E9004BBE61 /* StatisticsLoader.swift in Sources */,
-				2DF3FD2C2B51AFFD004BBE61 /* RecentMealsBundle.swift in Sources */,
-				2D0A0E5D2B51C42500157579 /* MontlyStats.swift in Sources */,
-				2DF3FD2E2B51AFFD004BBE61 /* RecentMeals.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		2DF3FD352B51AFFE004BBE61 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2DF3FD262B51AFFD004BBE61 /* RecentMealsExtension */;
-			targetProxy = 2DF3FD342B51AFFE004BBE61 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2D6139D22B4F30A000BF1B00 /* Debug */ = {
@@ -456,17 +334,19 @@
 		2D6139D52B4F30A000BF1B00 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = TheTip/TheTip.entitlements;
+				CODE_SIGN_ENTITLEMENTS = TableTip/TheTip.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TheTip/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TableTip/Preview Content\"";
 				DEVELOPMENT_TEAM = RTNB77DG84;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TableTip-Info.plist";
+				INFOPLIST_KEY_NSLocationUsageDescription = "The User's location is used for accuracy. The location is later shown and attached to every entry made by the user";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allows the user to attach their location to the places they dine at. This allows for the viewer to show the location later";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -482,7 +362,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.gaines.trey.TheTip;
+				PRODUCT_BUNDLE_IDENTIFIER = me.gaines.trey.TableTip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -496,17 +376,19 @@
 		2D6139D62B4F30A000BF1B00 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = TheTip/TheTip.entitlements;
+				CODE_SIGN_ENTITLEMENTS = TableTip/TheTip.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TheTip/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TableTip/Preview Content\"";
 				DEVELOPMENT_TEAM = RTNB77DG84;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TableTip-Info.plist";
+				INFOPLIST_KEY_NSLocationUsageDescription = "The User's location is used for accuracy. The location is later shown and attached to every entry made by the user";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allows the user to attach their location to the places they dine at. This allows for the viewer to show the location later";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -522,7 +404,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.gaines.trey.TheTip;
+				PRODUCT_BUNDLE_IDENTIFIER = me.gaines.trey.TableTip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -530,65 +412,6 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		2DF3FD382B51AFFE004BBE61 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RTNB77DG84;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RecentMeals/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = RecentMeals;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.gaines.trey.TheTip.RecentMeals;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		2DF3FD392B51AFFE004BBE61 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RTNB77DG84;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RecentMeals/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = RecentMeals;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.gaines.trey.TheTip.RecentMeals;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -609,15 +432,6 @@
 			buildConfigurations = (
 				2D6139D52B4F30A000BF1B00 /* Debug */,
 				2D6139D62B4F30A000BF1B00 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2DF3FD372B51AFFE004BBE61 /* Build configuration list for PBXNativeTarget "RecentMealsExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2DF3FD382B51AFFE004BBE61 /* Debug */,
-				2DF3FD392B51AFFE004BBE61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
