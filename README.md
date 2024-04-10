@@ -1,7 +1,6 @@
 Meal Tracker + Tip Calculator
 
 Frameworks Explored:
-  - SwiftUI
   - SwiftData
   - MapKit
 
